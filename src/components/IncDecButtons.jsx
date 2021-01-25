@@ -19,7 +19,6 @@ const IncDecButtons = (props) => {
     const handlePlusClick = () => {
         props.type.unit === 'Celsius' ? inputContext.updateFahrenheit(++inputContext.tempInC) :
             inputContext.updateCelsius(++inputContext.tempInF);
-        console.log({ xxx: inputContext.tempInC, fff: inputContext.tempInF })
     }
     const handleMinusClick = () => {
         props.type.unit === 'Celsius' ? inputContext.updateFahrenheit(--inputContext.tempInC) :
